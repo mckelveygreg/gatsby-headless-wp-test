@@ -24,6 +24,18 @@ module.exports = {
          * Example : 'gatsbyjsexamplewordpress.wordpress.com' or 'www.example-site.com'
          */
         baseUrl: "https://headless.thedevdrop.com",
+        concurrentRequests: 5,
+        includedRoutes: [
+          "**/categories",
+          "**/posts",
+          "**/pages",
+          "**/media",
+          "**/tags",
+          "**/taxonomies",
+          "**/users",
+        ],
+        useACF: true,
+        keepMediaSizes: true,
       },
     },
     {
